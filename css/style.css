@@ -1,0 +1,76 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #181818;
+    background-image: radial-gradient(circle at 50% -50%, #3a3af4 -10%, transparent 55%);
+    backdrop-filter: blur(150px);
+    height: 120vh;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 58px;
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 295px;
+    display: flex;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-family: "Kaushan Script", sans-serif;
+    color: #FFF;
+}
+
+nav {
+    width: 550px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    font-weight: 500;
+}
+
+.nav-button {
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.login-button {
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
