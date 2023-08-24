@@ -1,9 +1,8 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #181818;
-    background-image: radial-gradient(circle at 50% -50%, #3a3af4 -10%, transparent 55%);
+    background-image: radial-gradient(circle at 50% -50%, #3a3af4 20%, transparent 40%), radial-gradient(circle at 50% 65%, #3a3af4 -10%, transparent 35%);
     backdrop-filter: blur(150px);
-    height: 120vh;
 }
 
 .container {
@@ -48,14 +47,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.80);
     font-size: 16px;
     text-decoration: none;
     transition: all .5s;
+    font-weight: 400;
 }
 
 nav ul li a:hover {
     font-weight: 500;
+    color: rgba(255, 255, 255, 1);
 }
 
 .nav-button {
@@ -73,4 +74,66 @@ nav ul li a:hover {
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    padding-top: 123px;
+}
+
+.hero .wrapper {
+    width: 922px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero .hero-title {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero .hero-title span {
+    font-weight: 500;
+}
+
+.hero .hero-sub-title {
+    width: 556px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.hero .hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    border-radius: 3px;
+    background-color: #3A3AF4;
+    text-decoration: none;
+}
+
+.hero .hero-button p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Image section */
+.image {
+    padding-top: 72px;
+    padding-bottom: 136px;
+}
+
+.image > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
